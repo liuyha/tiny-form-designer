@@ -1,0 +1,16 @@
+import React from 'react';
+import { DatePicker as AntDatePicker } from 'antd';
+import {IWidgetSchema} from "../../_Common/Types/IWidgetSchema.ts";
+
+interface DateProps {
+  schema: IWidgetSchema;
+}
+
+const DatePicker: React.FC<DateProps> = ({ schema }) => {
+  const { props } = schema;
+  return (
+      <AntDatePicker  {...props} />
+  );
+};
+
+export default DatePicker;

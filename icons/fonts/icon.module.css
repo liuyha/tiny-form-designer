@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "icon";
+  src: url('icon.eot?t=1741074437098');
+  /* IE9*/
+  src: url('icon.eot?t=1741074437098#iefix') format('embedded-opentype') /* IE6-IE8 */, url('icon.woff2?t=1741074437098') format('woff2'), url('icon.woff?t=1741074437098') format('woff'), url('icon.ttf?t=1741074437098') format('truetype'), url('icon.svg?t=1741074437098') format('svg');
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icon' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:global .icon-checkbox::before {
+  content: "\e000";
+}
+:global .icon-close::before {
+  content: "\e001";
+}
+:global .icon-code-1::before {
+  content: "\e002";
+}
+:global .icon-code-2::before {
+  content: "\e003";
+}
+:global .icon-code::before {
+  content: "\e004";
+}
+:global .icon-copy::before {
+  content: "\e005";
+}
+:global .icon-corner-up-left::before {
+  content: "\e006";
+}
+:global .icon-corner-up-right::before {
+  content: "\e007";
+}
+:global .icon-database-config::before {
+  content: "\e008";
+}
+:global .icon-datatype-api::before {
+  content: "\e009";
+}
+:global .icon-datatype-dictionary::before {
+  content: "\e00a";
+}
+:global .icon-datatype-static::before {
+  content: "\e00b";
+}
+:global .icon-date-range::before {
+  content: "\e00c";
+}
+:global .icon-date::before {
+  content: "\e00d";
+}
+:global .icon-datetime-range::before {
+  content: "\e00e";
+}
+:global .icon-datetime::before {
+  content: "\e00f";
+}
+:global .icon-delete::before {
+  content: "\e010";
+}
+:global .icon-drag::before {
+  content: "\e011";
+}
+:global .icon-eye::before {
+  content: "\e012";
+}
+:global .icon-form::before {
+  content: "\e013";
+}
+:global .icon-history-1::before {
+  content: "\e014";
+}
+:global .icon-history::before {
+  content: "\e015";
+}
+:global .icon-input-number::before {
+  content: "\e016";
+}
+:global .icon-input-password::before {
+  content: "\e017";
+}
+:global .icon-input::before {
+  content: "\e018";
+}
+:global .icon-laptop::before {
+  content: "\e019";
+}
+:global .icon-list::before {
+  content: "\e01a";
+}
+:global .icon-phone::before {
+  content: "\e01b";
+}
+:global .icon-pin-off::before {
+  content: "\e01c";
+}
+:global .icon-pin::before {
+  content: "\e01d";
+}
+:global .icon-puzzle::before {
+  content: "\e01e";
+}
+:global .icon-radio::before {
+  content: "\e01f";
+}
+:global .icon-redo::before {
+  content: "\e020";
+}
+:global .icon-restore::before {
+  content: "\e021";
+}
+:global .icon-select-1::before {
+  content: "\e022";
+}
+:global .icon-select::before {
+  content: "\e023";
+}
+:global .icon-switch-left::before {
+  content: "\e024";
+}
+:global .icon-switch-right::before {
+  content: "\e025";
+}
+:global .icon-table::before {
+  content: "\e026";
+}
+:global .icon-tablet::before {
+  content: "\e027";
+}
+:global .icon-textarea::before {
+  content: "\e028";
+}
+:global .icon-time-range::before {
+  content: "\e029";
+}
+:global .icon-time::before {
+  content: "\e02a";
+}
+:global .icon-tree-1::before {
+  content: "\e02b";
+}
+:global .icon-tree-2::before {
+  content: "\e02c";
+}
+:global .icon-tree::before {
+  content: "\e02d";
+}
+:global .icon-undo::before {
+  content: "\e02e";
+}
+:global .icon-upload-1::before {
+  content: "\e02f";
+}
+:global .icon-upload::before {
+  content: "\e030";
+}
+/*# sourceMappingURL=icon.module.css.map */

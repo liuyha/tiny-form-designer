@@ -1,0 +1,48 @@
+.list-input * {
+  box-sizing: border-box;
+}
+.list-input .list-input-table {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  table-layout: auto;
+  border-collapse: collapse;
+  /* 合并边框，去除 th 之间的间距 */
+  border-spacing: 0;
+}
+.list-input .list-input-header {
+  border-bottom: 1px solid var(--ant-color-border-secondary);
+}
+.list-input .list-input-header > tr > th {
+  text-align: start;
+  padding: 8px;
+  background-color: var(--ant-color-bg-layout);
+  overflow-wrap: break-word;
+  font-weight: 600;
+  font-size: 14px;
+}
+.list-input .list-input-row td {
+  padding: 8px;
+}
+.list-input .list-input-row td input {
+  border-radius: 0;
+}
+.list-input .list-input-row:hover {
+  background-color: var(--ant-color-bg-layout);
+}
+.list-input .list-input-row.drag-over {
+  outline: 1px dashed var(--ant-color-primary);
+  background-color: #e6f7ff;
+}
+.list-input .drag-handle {
+  cursor: move;
+  color: #999;
+  text-align: center;
+}
+.list-input .drag-handle:hover {
+  color: #1890ff;
+}
+.list-input .input-list-footer {
+  padding: 8px;
+}
+/*# sourceMappingURL=styles.css.map */

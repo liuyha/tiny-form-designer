@@ -1,0 +1,296 @@
+{
+  "checkbox": {
+    "encodedCode": "\\e000",
+    "prefix": "icon",
+    "className": "icon-checkbox",
+    "unicode": "&#57344;"
+  },
+  "close": {
+    "encodedCode": "\\e001",
+    "prefix": "icon",
+    "className": "icon-close",
+    "unicode": "&#57345;"
+  },
+  "code-1": {
+    "encodedCode": "\\e002",
+    "prefix": "icon",
+    "className": "icon-code-1",
+    "unicode": "&#57346;"
+  },
+  "code-2": {
+    "encodedCode": "\\e003",
+    "prefix": "icon",
+    "className": "icon-code-2",
+    "unicode": "&#57347;"
+  },
+  "code": {
+    "encodedCode": "\\e004",
+    "prefix": "icon",
+    "className": "icon-code",
+    "unicode": "&#57348;"
+  },
+  "copy": {
+    "encodedCode": "\\e005",
+    "prefix": "icon",
+    "className": "icon-copy",
+    "unicode": "&#57349;"
+  },
+  "corner-up-left": {
+    "encodedCode": "\\e006",
+    "prefix": "icon",
+    "className": "icon-corner-up-left",
+    "unicode": "&#57350;"
+  },
+  "corner-up-right": {
+    "encodedCode": "\\e007",
+    "prefix": "icon",
+    "className": "icon-corner-up-right",
+    "unicode": "&#57351;"
+  },
+  "database-config": {
+    "encodedCode": "\\e008",
+    "prefix": "icon",
+    "className": "icon-database-config",
+    "unicode": "&#57352;"
+  },
+  "datatype-api": {
+    "encodedCode": "\\e009",
+    "prefix": "icon",
+    "className": "icon-datatype-api",
+    "unicode": "&#57353;"
+  },
+  "datatype-dictionary": {
+    "encodedCode": "\\e00a",
+    "prefix": "icon",
+    "className": "icon-datatype-dictionary",
+    "unicode": "&#57354;"
+  },
+  "datatype-static": {
+    "encodedCode": "\\e00b",
+    "prefix": "icon",
+    "className": "icon-datatype-static",
+    "unicode": "&#57355;"
+  },
+  "date-range": {
+    "encodedCode": "\\e00c",
+    "prefix": "icon",
+    "className": "icon-date-range",
+    "unicode": "&#57356;"
+  },
+  "date": {
+    "encodedCode": "\\e00d",
+    "prefix": "icon",
+    "className": "icon-date",
+    "unicode": "&#57357;"
+  },
+  "datetime-range": {
+    "encodedCode": "\\e00e",
+    "prefix": "icon",
+    "className": "icon-datetime-range",
+    "unicode": "&#57358;"
+  },
+  "datetime": {
+    "encodedCode": "\\e00f",
+    "prefix": "icon",
+    "className": "icon-datetime",
+    "unicode": "&#57359;"
+  },
+  "delete": {
+    "encodedCode": "\\e010",
+    "prefix": "icon",
+    "className": "icon-delete",
+    "unicode": "&#57360;"
+  },
+  "drag": {
+    "encodedCode": "\\e011",
+    "prefix": "icon",
+    "className": "icon-drag",
+    "unicode": "&#57361;"
+  },
+  "eye": {
+    "encodedCode": "\\e012",
+    "prefix": "icon",
+    "className": "icon-eye",
+    "unicode": "&#57362;"
+  },
+  "form": {
+    "encodedCode": "\\e013",
+    "prefix": "icon",
+    "className": "icon-form",
+    "unicode": "&#57363;"
+  },
+  "history-1": {
+    "encodedCode": "\\e014",
+    "prefix": "icon",
+    "className": "icon-history-1",
+    "unicode": "&#57364;"
+  },
+  "history": {
+    "encodedCode": "\\e015",
+    "prefix": "icon",
+    "className": "icon-history",
+    "unicode": "&#57365;"
+  },
+  "input-number": {
+    "encodedCode": "\\e016",
+    "prefix": "icon",
+    "className": "icon-input-number",
+    "unicode": "&#57366;"
+  },
+  "input-password": {
+    "encodedCode": "\\e017",
+    "prefix": "icon",
+    "className": "icon-input-password",
+    "unicode": "&#57367;"
+  },
+  "input": {
+    "encodedCode": "\\e018",
+    "prefix": "icon",
+    "className": "icon-input",
+    "unicode": "&#57368;"
+  },
+  "laptop": {
+    "encodedCode": "\\e019",
+    "prefix": "icon",
+    "className": "icon-laptop",
+    "unicode": "&#57369;"
+  },
+  "list": {
+    "encodedCode": "\\e01a",
+    "prefix": "icon",
+    "className": "icon-list",
+    "unicode": "&#57370;"
+  },
+  "phone": {
+    "encodedCode": "\\e01b",
+    "prefix": "icon",
+    "className": "icon-phone",
+    "unicode": "&#57371;"
+  },
+  "pin-off": {
+    "encodedCode": "\\e01c",
+    "prefix": "icon",
+    "className": "icon-pin-off",
+    "unicode": "&#57372;"
+  },
+  "pin": {
+    "encodedCode": "\\e01d",
+    "prefix": "icon",
+    "className": "icon-pin",
+    "unicode": "&#57373;"
+  },
+  "puzzle": {
+    "encodedCode": "\\e01e",
+    "prefix": "icon",
+    "className": "icon-puzzle",
+    "unicode": "&#57374;"
+  },
+  "radio": {
+    "encodedCode": "\\e01f",
+    "prefix": "icon",
+    "className": "icon-radio",
+    "unicode": "&#57375;"
+  },
+  "redo": {
+    "encodedCode": "\\e020",
+    "prefix": "icon",
+    "className": "icon-redo",
+    "unicode": "&#57376;"
+  },
+  "restore": {
+    "encodedCode": "\\e021",
+    "prefix": "icon",
+    "className": "icon-restore",
+    "unicode": "&#57377;"
+  },
+  "select-1": {
+    "encodedCode": "\\e022",
+    "prefix": "icon",
+    "className": "icon-select-1",
+    "unicode": "&#57378;"
+  },
+  "select": {
+    "encodedCode": "\\e023",
+    "prefix": "icon",
+    "className": "icon-select",
+    "unicode": "&#57379;"
+  },
+  "switch-left": {
+    "encodedCode": "\\e024",
+    "prefix": "icon",
+    "className": "icon-switch-left",
+    "unicode": "&#57380;"
+  },
+  "switch-right": {
+    "encodedCode": "\\e025",
+    "prefix": "icon",
+    "className": "icon-switch-right",
+    "unicode": "&#57381;"
+  },
+  "table": {
+    "encodedCode": "\\e026",
+    "prefix": "icon",
+    "className": "icon-table",
+    "unicode": "&#57382;"
+  },
+  "tablet": {
+    "encodedCode": "\\e027",
+    "prefix": "icon",
+    "className": "icon-tablet",
+    "unicode": "&#57383;"
+  },
+  "textarea": {
+    "encodedCode": "\\e028",
+    "prefix": "icon",
+    "className": "icon-textarea",
+    "unicode": "&#57384;"
+  },
+  "time-range": {
+    "encodedCode": "\\e029",
+    "prefix": "icon",
+    "className": "icon-time-range",
+    "unicode": "&#57385;"
+  },
+  "time": {
+    "encodedCode": "\\e02a",
+    "prefix": "icon",
+    "className": "icon-time",
+    "unicode": "&#57386;"
+  },
+  "tree-1": {
+    "encodedCode": "\\e02b",
+    "prefix": "icon",
+    "className": "icon-tree-1",
+    "unicode": "&#57387;"
+  },
+  "tree-2": {
+    "encodedCode": "\\e02c",
+    "prefix": "icon",
+    "className": "icon-tree-2",
+    "unicode": "&#57388;"
+  },
+  "tree": {
+    "encodedCode": "\\e02d",
+    "prefix": "icon",
+    "className": "icon-tree",
+    "unicode": "&#57389;"
+  },
+  "undo": {
+    "encodedCode": "\\e02e",
+    "prefix": "icon",
+    "className": "icon-undo",
+    "unicode": "&#57390;"
+  },
+  "upload-1": {
+    "encodedCode": "\\e02f",
+    "prefix": "icon",
+    "className": "icon-upload-1",
+    "unicode": "&#57391;"
+  },
+  "upload": {
+    "encodedCode": "\\e030",
+    "prefix": "icon",
+    "className": "icon-upload",
+    "unicode": "&#57392;"
+  }
+}

@@ -1,0 +1,382 @@
+@base-border-solid: 0.5px solid var(--ant-color-border-secondary);
+@base-border-solid-1: 0.5px solid #ededed;
+@base-background-color: var(--ant-color-bg-base);
+@base-shadow-right: 4px 6px 6px 0 rgba(31, 56, 88, 0.06);
+@base-bar-size: 48px;
+.form-builder {
+  width: 100%;
+  height: 100%;
+  min-width: 860px;
+
+  .builder-layout {
+    width: 100%;
+    height: 100%;
+
+    .dock-bar-container {
+      background-color: @base-background-color;
+      line-height: normal;
+      border-right: @base-border-solid;
+      position: relative;
+
+      .dock-bar {
+        .bar-item {
+          width: @base-bar-size;
+          height: @base-bar-size;
+          line-height: @base-bar-size;
+          text-align: center;
+
+          &.active {
+            button {
+              background-color: var(--ant-color-primary-bg);
+              color: var(--ant-color-primary);
+            }
+          }
+        }
+      }
+
+      .dock-panel {
+        min-width: 300px;
+        height: 100%;
+        position: absolute;
+        left: @base-bar-size;
+        top: 0;
+        background-color: @base-background-color;
+        z-index: 100;
+        box-shadow: @base-shadow-right;
+        transition: width 0.1s ease-in;
+        display: none;
+
+        &.visible {
+          display: block;
+        }
+
+        .panel-card {
+          height: 100%;
+          border: none;
+          display: flex;
+          flex-direction: column;
+
+          .ant-card-head {
+            height: @base-bar-size;
+            min-height: @base-bar-size;
+          }
+
+          & > .ant-card-body {
+            flex: 1;
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            .panel-container {
+              width: 100%;
+              height: 100%;
+              overflow-x: auto;
+
+              .widget-group-card {
+                border-left: none;
+                border-right: none;
+                box-shadow: none;
+                width: 100%;
+
+                .ant-card-body {
+                  padding: 12px;
+                }
+
+                & + .widget-group-card {
+                  border-top: none;
+                }
+
+                .widget-group-container {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 8px;
+
+                  .widget-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    padding: 6px 8px;
+                    border: @base-border-solid;
+                    cursor: move;
+                    transition: all 0.2s;
+                    white-space: nowrap;
+                    user-select: none;
+                  }
+                }
+              }
+
+              .schema-structure-tree-node {
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 5px;
+                .icon {
+                  font-size: var(--ant-font-size);
+                  padding-top: 3px;
+                }
+                .right {
+                  display: none;
+                }
+                &:hover {
+                  .right {
+                    display: block;
+                  }
+                }
+              }
+
+              .history-panel {
+                padding: 12px;
+                .history-item {
+                  font-size: 12px;
+                  padding: 5px;
+                  cursor: pointer;
+                  &:hover {
+                    outline: 1px solid var(--ant-color-primary);
+                  }
+                }
+              }
+              .datasource-config-dock-panel {
+                width: 400px;
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                .datasource-type-segmented {
+                  .ant-segmented-item-label {
+                    height: calc(@base-bar-size / 2);
+                    line-height: calc(@base-bar-size / 2);
+                    min-height: calc(@base-bar-size / 2);
+                    .icon {
+                      font-size: 14px;
+                    }
+                  }
+                }
+                .panel-body {
+                  flex: 1;
+                  padding-top: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  .panel-action-container {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    button {
+                      height: calc(@base-bar-size / 2);
+                      line-height: calc(@base-bar-size / 2);
+                    }
+                  }
+                  .datasource-list {
+                    flex: 1;
+                    overflow-y: auto;
+                    .ant-list-item {
+                      padding-left: 10px;
+                      padding-right: 10px;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-sub {
+      .tool-bar-container {
+        height: @base-bar-size;
+        padding: 0 10px;
+        line-height: normal;
+        background-color: @base-background-color;
+        border-bottom: @base-border-solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .tool-bar {
+          display: flex;
+          align-items: center;
+
+          .bar-item {
+            height: @base-bar-size;
+            line-height: @base-bar-size;
+            text-align: center;
+
+            & + .bar-item {
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+
+      .builder-canvas-container {
+        padding: 10px 10px 0 10px;
+
+        .canvas {
+          width: 100%;
+          height: 100%;
+          background-color: @base-background-color;
+          &.highlight {
+            background-color: var(--ant-color-primary-bg);
+          }
+
+          .schema-renderer {
+            padding: 12px;
+            cursor: move;
+            transition: outline-color 0.2s;
+            position: relative;
+            &.highlight-top {
+              border-top: 2px solid var(--ant-color-primary);
+            }
+            &.highlight-bottom {
+              border-bottom: 2px solid var(--ant-color-primary);
+            }
+            .ant-form-item {
+              * {
+                pointer-events: none;
+              }
+            }
+            .upload-widget-container__picture {
+              .ant-upload-select{
+                display: inline-block;
+                width: calc(var(--ant-control-height-lg)* 2.55);
+                height: calc(var(--ant-control-height-lg)* 2.55);
+                text-align: center;
+                vertical-align: top;
+                background-color: var(--ant-color-fill-alter);
+                border: var(--ant-line-width) dashed var(--ant-color-border);
+                border-radius: var(--ant-border-radius-lg);
+                cursor: pointer;
+                transition: border-color var(--ant-motion-duration-slow);
+                .ant-upload {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                  text-align: center;
+                }
+              }
+
+            }
+          }
+
+          .schema-element-hovered-box {
+            position: fixed;
+            pointer-events: none;
+            z-index: 99;
+            display: none;
+            outline: 1px dashed var(--ant-color-primary);
+
+            .box-container {
+              position: absolute;
+              top: -18px;
+              left: -1px;
+              color: var(--ant-color-primary);
+              font-size: 12px;
+              white-space: nowrap;
+            }
+          }
+          .schema-element-selected-box {
+            z-index: 99;
+            position: fixed;
+            pointer-events: none;
+            outline: 1px solid var(--ant-color-primary);
+            .action-box * {
+              pointer-events: all;
+            }
+          }
+        }
+      }
+    }
+
+    .property-panel-container {
+      background-color: @base-background-color;
+      border-left: @base-border-solid;
+      .property-panel-form {
+        height: 100%;
+        .property-panel-tabs {
+          height: 100%;
+          border: none;
+          .ant-tabs-content-holder {
+            overflow-y: auto;
+          }
+          .ant-tabs-tab {
+            height: @base-bar-size;
+          }
+          .ant-tabs-tab-btn {
+            padding: 0 8px;
+          }
+          .ant-tabs-nav {
+            margin: 0;
+          }
+        }
+        .form-property-panel {
+          padding-top: 10px;
+        }
+
+        .property-form-item {
+          & * {
+            font-size: 12px;
+          }
+          .ant-form-item {
+            padding: 0 10px;
+            .ant-form-item-control-input-content {
+              & > * {
+                width: 100%;
+              }
+            }
+            .ant-form-item-label {
+              label {
+                font-size: 12px;
+                color: var(--ant-color-text-secondary);
+              }
+            }
+          }
+        }
+      }
+      .property-setting-from-collapse {
+        .ant-collapse-header {
+          background-color: var(--ant-color-bg-layout);
+          border-left: @base-border-solid-1;
+        }
+        .ant-collapse-header-text {
+          font-size: 12px;
+        }
+        .ant-collapse-content-box {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .ant-collapse-item {
+          &+.ant-collapse-item {
+            margin-top: 2px;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .bar-group {
+    &__inline {
+      .bar-item {
+        display: inline-block;
+      }
+    }
+    &.split__vertical{
+      border-bottom: @base-border-solid;
+    }
+    &.split__horizontal{
+      border-right: @base-border-solid;
+    }
+  }
+}
+
+.history-dropdown-menu {
+  .ant-dropdown-menu-title-content {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .icon {
+    font-size: 14px;
+  }
+}

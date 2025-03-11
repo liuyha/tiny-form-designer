@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "icon";
+  src: url('./Fonts/icon.ttf?t=1740400802760') format('truetype');
+}
+.icon {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.icon > * {
+  line-height: 1;
+}
+.icon-checkbox::before {
+  content: "\e000";
+}
+.icon-close::before {
+  content: "\e001";
+}
+.icon-code-1::before {
+  content: "\e002";
+}
+.icon-code-2::before {
+  content: "\e003";
+}
+.icon-code::before {
+  content: "\e004";
+}
+.icon-copy::before {
+  content: "\e005";
+}
+.icon-corner-up-left::before {
+  content: "\e006";
+}
+.icon-corner-up-right::before {
+  content: "\e007";
+}
+.icon-database-config::before {
+  content: "\e008";
+}
+.icon-datatype-api::before {
+  content: "\e009";
+}
+.icon-datatype-dictionary::before {
+  content: "\e00a";
+}
+.icon-datatype-static::before {
+  content: "\e00b";
+}
+.icon-date-range::before {
+  content: "\e00c";
+}
+.icon-date::before {
+  content: "\e00d";
+}
+.icon-datetime-range::before {
+  content: "\e00e";
+}
+.icon-datetime::before {
+  content: "\e00f";
+}
+.icon-delete::before {
+  content: "\e010";
+}
+.icon-drag::before {
+  content: "\e011";
+}
+.icon-eye::before {
+  content: "\e012";
+}
+.icon-form::before {
+  content: "\e013";
+}
+.icon-history-1::before {
+  content: "\e014";
+}
+.icon-history::before {
+  content: "\e015";
+}
+.icon-input-number::before {
+  content: "\e016";
+}
+.icon-input-password::before {
+  content: "\e017";
+}
+.icon-input::before {
+  content: "\e018";
+}
+.icon-laptop::before {
+  content: "\e019";
+}
+.icon-list::before {
+  content: "\e01a";
+}
+.icon-phone::before {
+  content: "\e01b";
+}
+.icon-pin-off::before {
+  content: "\e01c";
+}
+.icon-pin::before {
+  content: "\e01d";
+}
+.icon-puzzle::before {
+  content: "\e01e";
+}
+.icon-radio::before {
+  content: "\e01f";
+}
+.icon-redo::before {
+  content: "\e020";
+}
+.icon-restore::before {
+  content: "\e021";
+}
+.icon-select-1::before {
+  content: "\e022";
+}
+.icon-select::before {
+  content: "\e023";
+}
+.icon-switch-left::before {
+  content: "\e024";
+}
+.icon-switch-right::before {
+  content: "\e025";
+}
+.icon-table::before {
+  content: "\e026";
+}
+.icon-tablet::before {
+  content: "\e027";
+}
+.icon-textarea::before {
+  content: "\e028";
+}
+.icon-time-range::before {
+  content: "\e029";
+}
+.icon-time::before {
+  content: "\e02a";
+}
+.icon-tree-1::before {
+  content: "\e02b";
+}
+.icon-tree-2::before {
+  content: "\e02c";
+}
+.icon-tree::before {
+  content: "\e02d";
+}
+.icon-undo::before {
+  content: "\e02e";
+}
+.icon-upload-1::before {
+  content: "\e02f";
+}
+.icon-upload::before {
+  content: "\e030";
+}
+/*# sourceMappingURL=styles.css.map */

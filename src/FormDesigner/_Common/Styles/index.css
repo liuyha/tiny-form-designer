@@ -1,0 +1,318 @@
+.form-builder {
+  width: 100%;
+  height: 100%;
+  min-width: 860px;
+}
+.form-builder .builder-layout {
+  width: 100%;
+  height: 100%;
+}
+.form-builder .builder-layout .dock-bar-container {
+  background-color: var(--ant-color-bg-base);
+  line-height: normal;
+  border-right: 0.5px solid var(--ant-color-border-secondary);
+  position: relative;
+}
+.form-builder .builder-layout .dock-bar-container .dock-bar .bar-item {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+.form-builder .builder-layout .dock-bar-container .dock-bar .bar-item.active button {
+  background-color: var(--ant-color-primary-bg);
+  color: var(--ant-color-primary);
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel {
+  min-width: 300px;
+  height: 100%;
+  position: absolute;
+  left: 48px;
+  top: 0;
+  background-color: var(--ant-color-bg-base);
+  z-index: 100;
+  box-shadow: 4px 6px 6px 0 rgba(31, 56, 88, 0.06);
+  transition: width 0.1s ease-in;
+  display: none;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel.visible {
+  display: block;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card {
+  height: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card .ant-card-head {
+  height: 48px;
+  min-height: 48px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body {
+  flex: 1;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .widget-group-card {
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  width: 100%;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .widget-group-card .ant-card-body {
+  padding: 12px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .widget-group-card + .widget-group-card {
+  border-top: none;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .widget-group-card .widget-group-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .widget-group-card .widget-group-container .widget-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border: 0.5px solid var(--ant-color-border-secondary);
+  cursor: move;
+  transition: all 0.2s;
+  white-space: nowrap;
+  user-select: none;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .schema-structure-tree-node {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .schema-structure-tree-node .icon {
+  font-size: var(--ant-font-size);
+  padding-top: 3px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .schema-structure-tree-node .right {
+  display: none;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .schema-structure-tree-node:hover .right {
+  display: block;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .history-panel {
+  padding: 12px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .history-panel .history-item {
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .history-panel .history-item:hover {
+  outline: 1px solid var(--ant-color-primary);
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel {
+  width: 400px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel .datasource-type-segmented .ant-segmented-item-label {
+  height: calc(48px / 2);
+  line-height: calc(48px / 2);
+  min-height: calc(48px / 2);
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel .datasource-type-segmented .ant-segmented-item-label .icon {
+  font-size: 14px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel .panel-body {
+  flex: 1;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel .panel-body .panel-action-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel .panel-body .panel-action-container button {
+  height: calc(48px / 2);
+  line-height: calc(48px / 2);
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel .panel-body .datasource-list {
+  flex: 1;
+  overflow-y: auto;
+}
+.form-builder .builder-layout .dock-bar-container .dock-panel .panel-card > .ant-card-body .panel-container .datasource-config-dock-panel .panel-body .datasource-list .ant-list-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.form-builder .builder-layout-sub .tool-bar-container {
+  height: 48px;
+  padding: 0 10px;
+  line-height: normal;
+  background-color: var(--ant-color-bg-base);
+  border-bottom: 0.5px solid var(--ant-color-border-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-builder .builder-layout-sub .tool-bar-container .tool-bar {
+  display: flex;
+  align-items: center;
+}
+.form-builder .builder-layout-sub .tool-bar-container .tool-bar .bar-item {
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+.form-builder .builder-layout-sub .tool-bar-container .tool-bar .bar-item + .bar-item {
+  margin-left: 6px;
+}
+.form-builder .builder-layout-sub .builder-canvas-container {
+  padding: 10px 10px 0 10px;
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas {
+  width: 100%;
+  height: 100%;
+  background-color: var(--ant-color-bg-base);
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas.highlight {
+  background-color: var(--ant-color-primary-bg);
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-renderer {
+  padding: 12px;
+  cursor: move;
+  transition: outline-color 0.2s;
+  position: relative;
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-renderer.highlight-top {
+  border-top: 2px solid var(--ant-color-primary);
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-renderer.highlight-bottom {
+  border-bottom: 2px solid var(--ant-color-primary);
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-renderer .ant-form-item * {
+  pointer-events: none;
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-renderer .upload-widget-container__picture .ant-upload-select {
+  display: inline-block;
+  width: calc(var(--ant-control-height-lg)*2.55);
+  height: calc(var(--ant-control-height-lg)*2.55);
+  text-align: center;
+  vertical-align: top;
+  background-color: var(--ant-color-fill-alter);
+  border: var(--ant-line-width) dashed var(--ant-color-border);
+  border-radius: var(--ant-border-radius-lg);
+  cursor: pointer;
+  transition: border-color var(--ant-motion-duration-slow);
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-renderer .upload-widget-container__picture .ant-upload-select .ant-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-element-hovered-box {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99;
+  display: none;
+  outline: 1px dashed var(--ant-color-primary);
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-element-hovered-box .box-container {
+  position: absolute;
+  top: -18px;
+  left: -1px;
+  color: var(--ant-color-primary);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-element-selected-box {
+  z-index: 99;
+  position: fixed;
+  pointer-events: none;
+  outline: 1px solid var(--ant-color-primary);
+}
+.form-builder .builder-layout-sub .builder-canvas-container .canvas .schema-element-selected-box .action-box * {
+  pointer-events: all;
+}
+.form-builder .builder-layout .property-panel-container {
+  background-color: var(--ant-color-bg-base);
+  border-left: 0.5px solid var(--ant-color-border-secondary);
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form {
+  height: 100%;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-panel-tabs {
+  height: 100%;
+  border: none;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-panel-tabs .ant-tabs-content-holder {
+  overflow-y: auto;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-panel-tabs .ant-tabs-tab {
+  height: 48px;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-panel-tabs .ant-tabs-tab-btn {
+  padding: 0 8px;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-panel-tabs .ant-tabs-nav {
+  margin: 0;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .form-property-panel {
+  padding-top: 10px;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-form-item * {
+  font-size: 12px;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-form-item .ant-form-item {
+  padding: 0 10px;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-form-item .ant-form-item .ant-form-item-control-input-content > * {
+  width: 100%;
+}
+.form-builder .builder-layout .property-panel-container .property-panel-form .property-form-item .ant-form-item .ant-form-item-label label {
+  font-size: 12px;
+  color: var(--ant-color-text-secondary);
+}
+.form-builder .builder-layout .property-panel-container .property-setting-from-collapse .ant-collapse-header {
+  background-color: var(--ant-color-bg-layout);
+  border-left: 0.5px solid #ededed;
+}
+.form-builder .builder-layout .property-panel-container .property-setting-from-collapse .ant-collapse-header-text {
+  font-size: 12px;
+}
+.form-builder .builder-layout .property-panel-container .property-setting-from-collapse .ant-collapse-content-box {
+  padding-left: 0;
+  padding-right: 0;
+}
+.form-builder .builder-layout .property-panel-container .property-setting-from-collapse .ant-collapse-item + .ant-collapse-item {
+  margin-top: 2px;
+}
+.form-builder .bar-group__inline .bar-item {
+  display: inline-block;
+}
+.form-builder .bar-group.split__vertical {
+  border-bottom: 0.5px solid var(--ant-color-border-secondary);
+}
+.form-builder .bar-group.split__horizontal {
+  border-right: 0.5px solid var(--ant-color-border-secondary);
+}
+.history-dropdown-menu .ant-dropdown-menu-title-content {
+  padding-left: 10px;
+  font-size: 14px;
+}
+.history-dropdown-menu .icon {
+  font-size: 14px;
+}
+.tiny-form-designer * {
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=index.css.map */
